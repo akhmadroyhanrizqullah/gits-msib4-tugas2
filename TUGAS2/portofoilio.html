@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container"> <!--agak ketengah kontainernya jadi (fluit'nya) dihilangkan container-fluit-->
+          <a class="navbar-brand" href="./portofoilio.html">My Profile</a> <!--klik logo akan kembali ke halaman porto-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto"> <!--margin straight : sbelah kiri supaya auto-->
+              <a class="nav-link active" aria-current="page" href="#">Home</a> <!--garing : tanda di section pertama/ awal. bisa pakai (/ atau #)-->
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navigasi -->
+
+      <!-- Hello Section -->
+
+<section id="hero" >
+    <div class="container mt-5">   <!-- mt margin top agar container atas berjarak -->
+    <div class="row">
+    <div class="col-6 margin-top transform-hero" > <!-- col : kolom, ukuranya maks 12. karna dibagi 2 kolom maka pas harus 6:6. kalau lebih dari 12 maka kolom satunya akan turun klo krg dari 12 maka ada sisa / tdk full layar -->
+        <h2>Welcome</h2>
+        <h2>Royhan</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+        <div class="col-6">
+            <img src="./bahan/9.jpeg" alt="admin" width="550" height="">
+        </div>
+        </div>
+        </div>
+</section>
+
+<!-- about -->
+<section id="about">
+    <div class="container mt-5" >
+    <div class="row text-center">
+    <div class="col ">
+<h2>About Me</h2>
+</div>
+</div>
+
+<div class="row text-center" >
+    <div class="col">
+        <p>Hello my friends... My name is Ahmad Raihan Rizqullah, I live in Sidoarjo - East Java. I study at Trunojoyo Madura University. My hobbies are playing games and sleeping. here I want to be a programmer but I can't program, so I seek knowledge at PT.GITS Indonesia.</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- project. jadi setiap buat div bikin container dlu didalamnya ada row baru col -->
+<section id="project">
+    <div class="container mt-5">
+<div class="row text-center">
+<div class="col">
+    <h2>Project</h2>
+    <p>My recent project</p>
+</div>
+</div>
+
+
+<!-- row : baris, col : kolom. jadi buat satu baris 3 kolom gambar -->
+    <div class="row"> 
+        <div class="col-4">   <!-- kalau 3 kolom barti 12:3 = 4. masing" kolom punya nilai 4 --> 
+            <div class="card" style="width: 18rem;">
+                <img src="./bahan/3.jpeg" class="card-img-top" alt="ngeri">
+                <div class="card-body">
+                <div class="row text-center">
+                    <h3>Photography</h3>
+                  <p class="card-text">The photo above is a photo taken using a cellphone camera and edited using Adobe Lightroom. for its location at Kahuripan Housing Sidoarjo - East Java.</p>
+                </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./bahan/5.jpeg" class="card-img-top" alt="ngeri">
+                <div class="card-body">
+                    <div class="row text-center">
+                    <h3>Photography</h3>
+                  <p class="card-text">The photo above is a photo taken using a cellphone camera and edited using Adobe Lightroom. for its location at Kahuripan Housing Sidoarjo - East Java.</p>
+                </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./bahan/6.jpeg" class="card-img-top" alt="ngeri">
+                <div class="card-body">
+                    <div class="row text-center">
+                    <h3>Photography</h3>
+                  <p class="card-text">The photo above is a photo taken using a cellphone camera and edited using Adobe Lightroom. for its location at Kahuripan Housing Sidoarjo - East Java.</p>
+                </div>
+                </div>
+        </div>
+        </div>
+
+    <!-- <div class="row justify-content-center"> <!--justify-content-center = atribut bootstrap center ke tengah kalau beetwen ada space di tengah kalau 2 kolom-->
+</section>
+
+<section id="contact">
+    <div class="container mt-5">
+    <div class="row text-center"> <!--biar tulisan contact di tengah-->
+    <div class="col">
+        <h2>Contact</h2>
+
+    </div>
+        </div>
+    
+    <div class="row">
+        <div class="col">
+                <p class="fw-bold">My Social Media : </p>
+                <p><i class="bi bi-whatsapp" style="color: green"></i> 0895340146564</p> <!--pewarnaan pakai internal css, internal adalah ditulis di dalam halaman html jadi satu-->
+                <p><i class="bi bi-envelope-at" style="color: pink"></i> royhan170402@gmail.com</p>
+                <p><i class="bi bi-instagram" style="color: purple"></i> royhanr_</p>
+        </div>
+     </div>
+    </div>
+
+</section>
+  
+</body> 
+<script src="./js/bootstrap.min.js"></script>
+</html>

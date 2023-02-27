@@ -1,0 +1,12 @@
+.margin-top {
+    margin-top: 9rem;
+    
+}
+
+.transform.hero {
+   transform: translateX(20);
+   -webkit-transform: translateX(20);
+   -moz-transform: translateX(20);
+   -ms-transform: translateX(20);
+   -o-transform: translateX(20);
+}
